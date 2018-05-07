@@ -49,6 +49,7 @@ public class GlobeSortClient {
         IntArray response = serverStub.sortIntegers(request);
         long endTime = System.nanoTime();
         long Duration = (endTime - startTime)/1000000000;
+        System.out.println(Duration);
         System.out.println("Sorted array");
     }
 
